@@ -1,3 +1,12 @@
 module org.dataoganalysekaeder {
+    requires org.jsoup;
+    requires java.desktop;
+    requires org.seleniumhq.selenium.chrome_driver;
+    requires dev.failsafe.core;
+    requires com.google.common;
+    requires org.seleniumhq.selenium.support;
     exports org.dataoganalysekaeder;
+    exports org.dataoganalysekaeder.storeInfo;
+    exports org.dataoganalysekaeder.scraper;
+
 }
