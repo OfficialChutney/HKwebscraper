@@ -23,23 +23,23 @@ public class Rema1000 extends StoreInfo {
             switch (element.tagName()) {
                 case "h2" -> {
                     if(name == null) {
-                        name = "Rema 1000 " + element.text();
+                        name = "Rema 1000 " + element.text().trim();
                     }
                 }
                 case "address" -> {
                     if(address == null) {
-                        address = element.text();
+                        address = element.text().trim();
                     }
                 }
                 case "span" -> {
                     if(owner == null) {
-                        owner = element.text();
+                        owner = element.text().substring(8);
                     }
                 }
                 case "div" -> {
                     if(phone == null && element.text().toLowerCase().contains("tlf")) {
-                        int index = element.text().toLowerCase().lastIndexOf("tlf.:");
-                        phone = element.text().substring(index);
+                        phone = element.text().replace("Tlf.:","").trim();
+
                     }
                 }
             }

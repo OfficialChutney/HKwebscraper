@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class MatasForsøgChromeDriver {
+public class MatasForsoergChromeDriver {
     public static void main(String[] args) throws Exception {
 
 //        Controller controller = new Controller();

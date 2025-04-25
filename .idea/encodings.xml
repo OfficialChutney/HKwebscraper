@@ -4,6 +4,6 @@
     <file url="file://$PROJECT_DIR$/build.gradle" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data/Rema1000.csv" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/output.txt" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/dataoganalysekaeder/MatasForsøgChromeDriver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dataoganalysekaeder/MatasForsoergChromeDriver.java" charset="UTF-8" />
   </component>
 </project>

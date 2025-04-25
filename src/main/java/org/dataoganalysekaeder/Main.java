@@ -1,6 +1,4 @@
-package org.dataoganalysekaeder.storeInfo;
-
-import org.dataoganalysekaeder.Controller;
+package org.dataoganalysekaeder;
 
 public class Main {
 
