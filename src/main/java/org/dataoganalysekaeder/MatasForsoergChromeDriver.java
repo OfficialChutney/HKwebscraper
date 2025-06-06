@@ -53,16 +53,13 @@ public class MatasForsoergChromeDriver {
             WebDriverWait waitForJS = new WebDriverWait(driver, Duration.ofSeconds(30)); // Adjust timeout
             waitForJS.until(driver1 -> (Boolean) ((JavascriptExecutor) driver1)
                     .executeScript("return window.doneLoading === true"));
-
             // 6. Grab final rendered HTML and parse with JSoup
             String renderedHtml = driver.getPageSource();
-
+            driver.quit();
             System.out.println(renderedHtml);
 
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            driver.quit(); // Clean up
         }
 
 

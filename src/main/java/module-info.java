@@ -5,6 +5,8 @@ module org.dataoganalysekaeder {
     requires dev.failsafe.core;
     requires com.google.common;
     requires org.seleniumhq.selenium.support;
+    requires java.net.http;
+    requires com.fasterxml.jackson.databind;
     exports org.dataoganalysekaeder;
     exports org.dataoganalysekaeder.storeInfo;
     exports org.dataoganalysekaeder.scraper;

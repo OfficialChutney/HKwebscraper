@@ -20,7 +20,7 @@ public class Rema1000Scraper implements Scraper {
     private final URL url;
     private final String IDENTIFIER;
     private final List<StoreInfo> stores;
-    private final String CSVHEADER = "NAME;ADDRESS;OWNER;PHONE";
+    private final String CSVHEADER = "PNUMMER;CVRNUM;CVRNAME;STORE_NAME;ADDRESS;OWNER;PHONE;";
     private final String CHAIN = "Rema1000";
 
     public Rema1000Scraper() {
