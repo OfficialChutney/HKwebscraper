@@ -27,8 +27,8 @@ public class CVRSearch {
     public static void parse(StoreInfo storeinfo, boolean checkAllVariables) {
         // Login credentials
         Address address = storeinfo.getAddress();
-        String username = "HK_Danmark_2_CVR_I_SKYEN";
-        String password = "f15545bc-5790-4ccf-8dac-469f556100dc";
+        String username = "";
+        String password = "";
         String auth = Base64.getEncoder().encodeToString((username + ":" + password).getBytes(StandardCharsets.UTF_8));
 
         StringBuilder extraQuery = new StringBuilder();
