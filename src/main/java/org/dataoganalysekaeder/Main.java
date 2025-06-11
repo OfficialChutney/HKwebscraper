@@ -2,6 +2,7 @@ package org.dataoganalysekaeder;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.dataoganalysekaeder.scraper.XLBygScraper;
 import org.dataoganalysekaeder.storeInfo.Address;
 
 import java.io.File;
@@ -21,8 +22,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        Controller controller = new Controller();
-        controller.scrape();
-        controller.printToCSV();
+//        Controller controller = new Controller();
+//        controller.scrape();
+//        controller.printToCSV();
+
+        XLBygScraper scraper = new XLBygScraper();
+        scraper.scrape();
     }
 }
